@@ -3,19 +3,21 @@ import { Link, Route, Routes } from 'react-router-dom';
 import ProjectDetails from './ProjectDetails';
 
 const ProjectCard = ({ project }) => (
-  <div className="bg-[#333d37] text-neutral-200 rounded-md shadow-md p-3">
-    <h3>{project.name}</h3>
+  <div className="bg-[#b8b2a8] text-[#47494a] shadow-md p-3 scale-center border-l-4 border-[#344658]">
+    <h3 className='text-lg font-semibold'>{project.name}</h3>
     <p>{project.description}</p>
     <img
       src={`/images/${project.images[0]}`}
       alt={`${project.name} Thumbnail`}
     />
-    <Link to={`${project.id}`}>Read More</Link>
+    <div className='w-full text-right'>
+      <Link to={`${project.id}`}>Read More</Link>
+    </div>
   </div>
 );
 
 const ProjectGrid = ({ projects }) => (
-  <div className="grid grid-cols-2 gap-4 m-2">
+  <div className="grid md:grid-cols-2 gap-4 m-2">
     {projects.map((project) => (
       <ProjectCard key={project.id} project={project} />
     ))}
