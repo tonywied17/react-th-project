@@ -1,0 +1,73 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Navigation Bar Styles */
+header {
+  background-color: #333;
+  color: white;
+  text-align: center;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  background-color: #555;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 5px;
+}
+
+nav a:hover {
+  background-color: #777;
+}
+
+/* Responsive Navigation Styles */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav a {
+    margin-top: 10px;
+  }
+}
+
+.menu-toggle {
+  display: none;
+  cursor: pointer;
+}
+
+/* Hide navigation links on small screens */
+@media (max-width: 768px) {
+  nav a {
+    display: none;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+}
+
+/* Page Content Styles */
+main {
+  padding: 20px;
+}
+
+/* Footer Styles */
+footer {
+  background-color: #333;
+  padding: 10px;
+  color: white;
+  text-align: center;
+}

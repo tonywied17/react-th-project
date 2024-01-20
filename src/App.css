@@ -1,0 +1,46 @@
+
+/* Responsive Navigation Styles */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav a {
+    margin-top: 10px;
+  }
+
+  /* Hide navigation links on small screens */
+  nav:not(.open) a {
+    display: none;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+}
+
+.menu-toggle {
+  display: none;
+  cursor: pointer;
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+/* Hide navigation links on small screens */
+@media (max-width: 768px) {
+  nav:not(.open) a {
+    display: none;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+}
+
+/* Style for open navigation on small screens */
+nav.open {
+  a {
+    display: block;
+  }
+}
