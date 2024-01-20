@@ -1,0 +1,83 @@
+[
+  {
+    "id": 1,
+    "name": "Kitchen Remodel",
+    "location": "123 Main St, Cityville",
+    "type": "Kitchen Remodel",
+    "description": "Complete kitchen renovation with modern design.",
+    "images": ["kitchen1.jpg", "kitchen2.jpg"],
+    "manufacturers": ["Manufacturer A", "Manufacturer B"]
+  },
+  {
+    "id": 2,
+    "name": "Bathroom Renovation",
+    "location": "456 Oak St, Townsville",
+    "type": "Bathroom Renovation",
+    "description": "Upgrade of master bathroom with luxurious features.",
+    "images": ["bathroom1.jpg", "bathroom2.jpg"],
+    "manufacturers": ["Manufacturer C", "Manufacturer D"]
+  },
+  {
+    "id": 3,
+    "name": "Basement Remodel",
+    "location": "789 Pine St, Villageton",
+    "type": "Basement Remodel",
+    "description": "Complete basement renovation with modern design.",
+    "images": ["basement1.jpg", "basement2.jpg"],
+    "manufacturers": ["Manufacturer E", "Manufacturer F"]
+  },
+  {
+    "id": 4,
+    "name": "Kitchen Remodel",
+    "location": "123 Main St, Cityville",
+    "type": "Kitchen Remodel",
+    "description": "Complete kitchen renovation with modern design.",
+    "images": ["kitchen1.jpg", "kitchen2.jpg"],
+    "manufacturers": ["Manufacturer A", "Manufacturer B"]
+  },
+  {
+    "id": 5,
+    "name": "Bathroom Renovation",
+    "location": "456 Oak St, Townsville",
+    "type": "Bathroom Renovation",
+    "description": "Upgrade of master bathroom with luxurious features.",
+    "images": ["bathroom1.jpg", "bathroom2.jpg"],
+    "manufacturers": ["Manufacturer C", "Manufacturer D"]
+  },
+  {
+    "id": 6,
+    "name": "Basement Remodel",
+    "location": "789 Pine St, Villageton",
+    "type": "Basement Remodel",
+    "description": "Complete basement renovation with modern design.",
+    "images": ["basement1.jpg", "basement2.jpg"],
+    "manufacturers": ["Manufacturer E", "Manufacturer F"]
+  },
+  {
+    "id": 7,
+    "name": "Kitchen Remodel",
+    "location": "123 Main St, Cityville",
+    "type": "Kitchen Remodel",
+    "description": "Complete kitchen renovation with modern design.",
+    "images": ["kitchen1.jpg", "kitchen2.jpg"],
+    "manufacturers": ["Manufacturer A", "Manufacturer B"]
+  },
+  {
+    "id": 8,
+    "name": "Bathroom Renovation",
+    "location": "456 Oak St, Townsville",
+    "type": "Bathroom Renovation",
+    "description": "Upgrade of master bathroom with luxurious features.",
+    "images": ["bathroom1.jpg", "bathroom2.jpg"],
+    "manufacturers": ["Manufacturer C", "Manufacturer D"]
+  },
+  {
+    "id": 9,
+    "name": "Basement Remodel",
+    "location": "789 Pine St, Villageton",
+    "type": "Basement Remodel",
+    "description": "Complete basement renovation with modern design.",
+    "images": ["basement1.jpg", "basement2.jpg"],
+    "manufacturers": ["Manufacturer E", "Manufacturer F"]
+  }
+]
