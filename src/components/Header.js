@@ -27,11 +27,11 @@ function Header() {
   }, [menuOpen]);
 
   return (
-    <header className='md:p-0 p-4 w-full shadow-lg border-b-8 border-[#b8b2a8]'>
+    <header className='md:p-0 p-4 w-full shadow-lg border-b-8 border-[#b8b2a8] top-in'>
       <div className='container md:py-[22px] mx-auto md:px-[100px] md:grid grid-cols-[auto_1fr] md:gap-3'>
         {/* Logo */}
         <Link to="/" onClick={closeMenu}>
-          <div className='grid grid-cols-[auto_1fr] grid-rows-2 gap-x-2 text-[#cfc7b8] select-none'>
+          <div className='grid grid-cols-[auto_1fr] grid-rows-2 gap-x-2 text-[#cfc7b8] select-none active:scale-90 transition-all duration-300'>
             <div className='row-start-1 row-span-2 col-start-1 col-span-1'>
               <span class="material-symbols-outlined text-[50px]">cottage</span>
             </div>

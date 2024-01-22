@@ -19,7 +19,7 @@ const ProjectCard = ({ project }) => {
   };
 
   return (
-    <Card className="mt-6 w-full bg-[#b8b2a8] relative">
+    <Card className="mt-6 w-full bg-[#b8b2a8] relative scale-center">
       <CardHeader className="h-56 bg-[#344658] text-[#b8b2a8] relative">
         {!imageLoaded && (
           <div className="loading-spinner-container">
@@ -76,7 +76,7 @@ const Projects = () => {
   }, []);
 
   return (
-    <div className='container mx-auto'>
+    <div className='container mx-auto fade-center'>
       <h2 class="md:text-4xl text-2xl font-extrabold text-[#313233] my-5">Recent Projects</h2>
       <p class="mt-4 mb-8 md:text-lg text-base text-[#47494a]">Explore our latest remodel projects showcasing innovative designs and transformations.</p>
       <Routes>
