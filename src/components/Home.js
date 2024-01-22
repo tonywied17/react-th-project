@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 function Home() {
   return (
     <div className='h-[calc(100vh-284px)] fade-center'>
-      <Carousel className="rounded-none">
+      <Carousel className="rounded-none shadow-lg">
       <div className="relative h-full w-full">
         <img
           src="https://tomhorgancarpenter.com/img/slider/1.jpg"
@@ -17,7 +17,7 @@ function Home() {
             <Typography
               variant="h1"
               color="white"
-              className="mb-4 text-3xl md:text-4xl lg:text-5xl"
+              className="mb-4 text-3xl md:text-4xl lg:text-5xl opacity-[89%]"
             >
               Custom Homes
             </Typography>
@@ -56,7 +56,7 @@ function Home() {
             <Typography
               variant="h1"
               color="white"
-              className="mb-4 text-3xl md:text-4xl lg:text-5xl"
+              className="mb-4 text-3xl md:text-4xl lg:text-5xl opacity-[89%]"
             >
               Redesign Your Bathroom
             </Typography>
@@ -96,7 +96,7 @@ function Home() {
             <Typography
               variant="h1"
               color="white"
-              className="mb-4 text-3xl md:text-4xl lg:text-5xl"
+              className="mb-4 text-3xl md:text-4xl lg:text-5xl opacity-[89%]"
             >
               Custom Kitchens
             </Typography>
@@ -136,7 +136,7 @@ function Home() {
             <Typography
               variant="h1"
               color="white"
-              className="mb-4 text-3xl md:text-4xl lg:text-5xl"
+              className="mb-4 text-3xl md:text-4xl lg:text-5xl opacity-[89%]"
             >
               Windows & Siding
             </Typography>
