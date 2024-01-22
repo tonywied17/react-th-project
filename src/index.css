@@ -104,7 +104,7 @@ footer {
 }
 
 .fade-center {
-  animation: fade-center 300ms ease 0s 1 normal forwards;
+  animation: fade-center 800ms ease 0s 1 normal forwards;
 }
 
 @keyframes scale-center {
@@ -139,6 +139,71 @@ footer {
   animation: scale-left 300ms ease 0s 1 normal forwards;
 }
 
+
+@keyframes top-in {
+	0% {
+		opacity: 0;
+		transform: translateY(-250px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+.top-in{
+  animation: top-in 300ms ease 0s 1 normal forwards;
+}
+
+@keyframes bottom-in {
+	0% {
+		opacity: 0;
+		transform: translateY(250px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+.bottom-in {
+  animation: bottom-in 300ms ease 0s 1 normal forwards;
+}
+
+
+@keyframes left-in {
+	0% {
+		opacity: 0;
+		transform: translateX(-250px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
+
+.left-in{
+  animation: left-in 300ms ease 0s 1 normal forwards;
+}
+
+@keyframes left-in {
+	0% {
+		opacity: 0;
+		transform: translateX(250px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
+
+.right-in {
+  animation: left-in 300ms ease 0s 1 normal forwards;
+}
 
 .loading-spinner-container {
   position: absolute;
