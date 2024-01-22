@@ -1,20 +1,54 @@
 import React, { useState, useEffect } from 'react';
 import { Link, Route, Routes } from 'react-router-dom';
 import ProjectDetails from './ProjectDetails';
+import {
+  Card,
+  CardHeader,
+  CardBody,
+  CardFooter,
+  Typography,
+  Button,
+} from "@material-tailwind/react";
 
-const ProjectCard = ({ project }) => (
-  <div className="bg-[#b8b2a8] text-[#47494a] shadow-md p-3 scale-center border-l-4 border-[#344658]">
-    <h3 className='text-lg font-semibold'>{project.name}</h3>
-    <p>{project.description}</p>
-    <img
-      src={`/images/${project.images[0]}`}
-      alt={`${project.name} Thumbnail`}
-    />
-    <div className='w-full text-right'>
-      <Link to={`${project.id}`}>Read More</Link>
-    </div>
-  </div>
-);
+const ProjectCard = ({ project }) => {
+  const [imageLoaded, setImageLoaded] = useState(false);
+  const randomImageId = Math.floor(Math.random() * 1000);
+
+  const handleImageLoad = () => {
+    setImageLoaded(true);
+  };
+
+  return (
+    <Card className="mt-6 w-full bg-[#b8b2a8] relative">
+      <CardHeader className="h-56 bg-[#344658] text-[#b8b2a8] relative">
+        {!imageLoaded && (
+          <div className="loading-spinner-container">
+            <div className="loading-spinner"></div>
+          </div>
+        )}
+        <img
+          onLoad={handleImageLoad}
+          style={{ display: imageLoaded ? 'block' : 'none' }}
+          src={`https://picsum.photos/800/400?random=${randomImageId}`}
+          alt={`${project.name} Thumbnail`}
+        />
+      </CardHeader>
+      <CardBody>
+        <Typography variant="h5" color="blue-gray" className="mb-2">
+          {project.name}
+        </Typography>
+        <Typography>
+          {project.description}
+        </Typography>
+      </CardBody>
+      <CardFooter className="pt-0">
+        <Link to={`${project.id}`}>
+          <Button className='bg-[#344658] text-[#b8b2a8]'>Read More</Button>
+        </Link>
+      </CardFooter>
+    </Card>
+  );
+};
 
 const ProjectGrid = ({ projects }) => (
   <div className="grid md:grid-cols-2 gap-4 m-2">
@@ -43,7 +77,8 @@ const Projects = () => {
 
   return (
     <div className='container mx-auto'>
-      <h2>Projects</h2>
+      <h2 class="md:text-4xl text-2xl font-extrabold text-[#313233] my-5">Recent Projects</h2>
+      <p class="mt-4 mb-8 md:text-lg text-base text-[#47494a]">Explore our latest remodel projects showcasing innovative designs and transformations.</p>
       <Routes>
         <Route path="/" element={<ProjectGrid projects={projects} />} />
         <Route path="/:projectId" element={<ProjectDetails projects={projects} />} />
