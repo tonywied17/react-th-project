@@ -30,7 +30,7 @@ const Projects = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch('/projects.json');
+        const response = await fetch('/dev/react-th/projects.json');
         const data = await response.json();
         setProjects(data);
       } catch (error) {

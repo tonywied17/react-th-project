@@ -1,8 +1,10 @@
 {
   "name": "th-react-app",
   "version": "0.1.0",
+  "homepage": "/dev/react-th",
   "private": true,
   "dependencies": {
+    "@material-tailwind/react": "^2.1.8",
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
@@ -14,7 +16,8 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "homepage": "http://molex.cloud/dev/react-th",
+    "build": "react-scripts build && mkdir build/dev/react-th && mv build/static build/dev/react-thstatic",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
