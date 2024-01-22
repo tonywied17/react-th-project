@@ -13,18 +13,14 @@ function Header() {
   };
 
   useEffect(() => {
-    // Add a global click event listener
     const handleClickOutside = (event) => {
-      // Check if the clicked element is not part of the menu
       if (menuOpen && !event.target.closest('.menu-container')) {
         closeMenu();
       }
     };
 
-    // Attach the event listener
     document.addEventListener('click', handleClickOutside);
 
-    // Clean up the event listener on component unmount
     return () => {
       document.removeEventListener('click', handleClickOutside);
     };
@@ -32,7 +28,7 @@ function Header() {
 
   return (
     <header className='md:p-0 p-4 w-full shadow-lg border-b-8 border-[#b8b2a8]'>
-      <div className='container md:py-[22px] mx-auto md:px-[200px] md:grid grid-cols-[auto_1fr] md:gap-3'>
+      <div className='container md:py-[22px] mx-auto md:px-[100px] md:grid grid-cols-[auto_1fr] md:gap-3'>
         {/* Logo */}
         <Link to="/" onClick={closeMenu}>
           <div className='grid grid-cols-[auto_1fr] grid-rows-2 gap-x-2 text-[#cfc7b8] select-none'>
