@@ -1,5 +1,6 @@
 import React from 'react';
 import { Carousel, Typography, Button } from "@material-tailwind/react";
+import { Link } from 'react-router-dom';
 
 function Home() {
   return (
@@ -30,12 +31,16 @@ function Home() {
               </p>
             </Typography>
             <div className="flex justify-center gap-2">
-              <Button size="lg" className='bg-[#b8b2a8] text-[#47494a]'>
-                Request Quote
-              </Button>
-              <Button size="lg" className='text-[#e5e5e5]' variant="text">
-                Gallery
-              </Button>
+              <Link to="/contact">
+                <Button size="lg" className='bg-[#b8b2a8] text-[#47494a]'>
+                  Request Quote
+                </Button>
+              </Link>
+              <Link to="/gallery">
+                <Button size="lg" className='text-[#e5e5e5]' variant="text">
+                  Gallery
+                </Button>
+              </Link>
             </div>
           </div>
         </div>
@@ -66,12 +71,16 @@ function Home() {
               </p>
             </Typography>
             <div className="flex gap-2">
-              <Button size="lg" className='bg-[#b8b2a8] text-[#47494a]'>
-                Request Quote
-              </Button>
-              <Button size="lg" className='text-[#e5e5e5]' variant="text">
-                Gallery
-              </Button>
+              <Link to="/contact">
+                <Button size="lg" className='bg-[#b8b2a8] text-[#47494a]'>
+                  Request Quote
+                </Button>
+              </Link>
+              <Link to="/gallery">
+                <Button size="lg" className='text-[#e5e5e5]' variant="text">
+                  Gallery
+                </Button>
+              </Link>
             </div>
           </div>
         </div>
@@ -102,12 +111,16 @@ function Home() {
               </p>
             </Typography>
             <div className="flex gap-2">
-            <Button size="lg" className='bg-[#b8b2a8] text-[#47494a]'>
-                Request Quote
-              </Button>
-              <Button size="lg" className='text-[#e5e5e5]' variant="text">
-                Gallery
-              </Button>
+              <Link to="/contact">
+                <Button size="lg" className='bg-[#b8b2a8] text-[#47494a]'>
+                  Request Quote
+                </Button>
+              </Link>
+              <Link to="/gallery">
+                <Button size="lg" className='text-[#e5e5e5]' variant="text">
+                  Gallery
+                </Button>
+              </Link>
             </div>
           </div>
         </div>
@@ -138,12 +151,16 @@ function Home() {
               </p>
             </Typography>
             <div className="flex gap-2">
-            <Button size="lg" className='bg-[#b8b2a8] text-[#47494a]'>
-                Request Quote
-              </Button>
-              <Button size="lg" className='text-[#e5e5e5]' variant="text">
-                Gallery
-              </Button>
+              <Link to="/contact">
+                <Button size="lg" className='bg-[#b8b2a8] text-[#47494a]'>
+                  Request Quote
+                </Button>
+              </Link>
+              <Link to="/gallery">
+                <Button size="lg" className='text-[#e5e5e5]' variant="text">
+                  Gallery
+                </Button>
+              </Link>
             </div>
           </div>
         </div>

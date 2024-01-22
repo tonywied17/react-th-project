@@ -138,3 +138,29 @@ footer {
 .scale-left{
   animation: scale-left 300ms ease 0s 1 normal forwards;
 }
+
+
+.loading-spinner-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.loading-spinner {
+  width: 40px;
+  height: 40px;
+  border: 4px solid #b8b2a8;
+  border-radius: 50%;
+  border-top: 4px solid transparent;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
