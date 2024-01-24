@@ -33,7 +33,7 @@ function Header() {
         
 
         {/* Phone Number/Location Box */}
-        <div className="md:justify-self-end hidden md:grid grid-cols-2 gap-10 text-[#b8b2a8] row-start-1 row-span-1 col-start-2">
+        <div className="lg:justify-self-end hidden lg:grid grid-cols-2 gap-10 text-[#b8b2a8] row-start-1 row-span-1 col-start-2">
 
             <div className='grid grid-cols-[auto_1fr] gap-4'>
               <div className='pr-4 border-r-2 border-[#b8b2a8]'>
@@ -63,7 +63,7 @@ function Header() {
             <div className='row-start-1 row-span-2 col-start-1 col-span-1'>
               <span class="material-symbols-outlined text-[50px]">cottage</span>
             </div>
-            <div className='row-start-1 row-span-1 col-start-2 col-span-1 text-3xl uppercase font-bold tracking-tighter'>
+            <div className='row-start-1 row-span-1 col-start-2 col-span-1 text-4xl uppercase font-bold tracking-tighter'>
               <span>tom</span><span className='text-[#eeede0]'>horgan</span>
             </div>
             <div className='row-start-2 row-span-1 col-start-2 col-span-1 tracking-tight font-[500]'>
