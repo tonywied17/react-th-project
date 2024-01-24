@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 function Home() {
   return (
-    <div className='h-[calc(100vh-284px)] fade-center'>
+    <div className='md:h-[calc(100vh-284px)] fade-center'>
       <Carousel className="rounded-none shadow-lg">
       <div className="relative h-full w-full">
         <img
@@ -24,7 +24,7 @@ function Home() {
             <Typography
               variant="lead"
               color="white"
-              className="mb-12 opacity-80"
+              className="mb-12 opacity-80 text-base md:text-xl"
             >
               <p>
                 Elevate your lifestyle with our bespoke custom homes, meticulously designed to reflect your unique vision and built to exceed your expectations. Experience the epitome of luxury living with unparalleled craftsmanship and attention to detail.
@@ -33,7 +33,8 @@ function Home() {
             <div className="flex justify-center gap-2">
               <Link to="/contact">
                 <Button size="lg" className='bg-[#b8b2a8] text-[#47494a]'>
-                  Request Quote
+                  <span className='hidden md:inline-block'>Request Quote</span>
+                  <span className='md:hidden'>Quote</span>
                 </Button>
               </Link>
               <Link to="/gallery">
@@ -63,7 +64,7 @@ function Home() {
             <Typography
               variant="lead"
               color="white"
-              className="mb-12 opacity-80"
+              className="mb-12 opacity-80 text-base md:text-xl"
             >
               Tiles, Fixtures, Vanities, and More
               <p>
@@ -73,7 +74,8 @@ function Home() {
             <div className="flex gap-2">
               <Link to="/contact">
                 <Button size="lg" className='bg-[#b8b2a8] text-[#47494a]'>
-                  Request Quote
+                  <span className='hidden md:inline-block'>Request Quote</span>
+                  <span className='md:hidden'>Quote</span>
                 </Button>
               </Link>
               <Link to="/gallery">
@@ -103,7 +105,7 @@ function Home() {
             <Typography
               variant="lead"
               color="white"
-              className="mb-12 opacity-80"
+              className="mb-12 opacity-80 text-base md:text-xl"
             >
               REMODELING, CABINETRY AND DESIGN
               <p>
@@ -113,7 +115,8 @@ function Home() {
             <div className="flex gap-2">
               <Link to="/contact">
                 <Button size="lg" className='bg-[#b8b2a8] text-[#47494a]'>
-                  Request Quote
+                  <span className='hidden md:inline-block'>Request Quote</span>
+                  <span className='md:hidden'>Quote</span>
                 </Button>
               </Link>
               <Link to="/gallery">
@@ -143,7 +146,7 @@ function Home() {
             <Typography
               variant="lead"
               color="white"
-              className="mb-12 opacity-80"
+              className="mb-12 opacity-80 text-base md:text-xl"
             >
               Installation, Replacement, Renovation
               <p>
@@ -153,7 +156,8 @@ function Home() {
             <div className="flex gap-2">
               <Link to="/contact">
                 <Button size="lg" className='bg-[#b8b2a8] text-[#47494a]'>
-                  Request Quote
+                  <span className='hidden md:inline-block'>Request Quote</span>
+                  <span className='md:hidden'>Quote</span>
                 </Button>
               </Link>
               <Link to="/gallery">
