@@ -28,24 +28,12 @@ function Header() {
 
   return (
     <header className='md:p-0 p-4 w-full shadow-lg border-b-8 border-[#b8b2a8] top-in'>
-      <div className='container md:py-[22px] mx-auto md:px-[100px] md:grid grid-cols-[auto_1fr] md:gap-3'>
-        {/* Logo */}
-        <Link to="/" onClick={closeMenu}>
-          <div className='grid grid-cols-[auto_1fr] grid-rows-2 gap-x-2 text-[#cfc7b8] select-none active:scale-90 transition-all duration-300'>
-            <div className='row-start-1 row-span-2 col-start-1 col-span-1'>
-              <span class="material-symbols-outlined text-[50px]">cottage</span>
-            </div>
-            <div className='row-start-1 row-span-1 col-start-2 col-span-1 text-3xl uppercase font-bold tracking-tighter'>
-              <span>tom</span><span className='text-[#eeede0]'>horgan</span>
-            </div>
-            <div className='row-start-2 row-span-1 col-start-2 col-span-1 tracking-tight font-[500]'>
-              <span>Carpenter &amp; Builder</span>
-            </div>
-          </div>
-        </Link>
+      <div className='container md:py-4 mx-auto md:px-[100px] md:grid grid-cols-[auto_1fr] grid-rows-2 md:gap-3'>
+
+        
 
         {/* Phone Number/Location Box */}
-        <div className="md:justify-self-end hidden md:grid grid-cols-2 gap-10 text-[#b8b2a8]">
+        <div className="md:justify-self-end hidden md:grid grid-cols-2 gap-10 text-[#b8b2a8] row-start-1 row-span-1 col-start-2">
 
             <div className='grid grid-cols-[auto_1fr] gap-4'>
               <div className='pr-4 border-r-2 border-[#b8b2a8]'>
@@ -67,6 +55,22 @@ function Header() {
             </div>
             
         </div>
+
+        {/* Logo */}
+        <Link to="/" onClick={closeMenu} className='row-start-2 row-span-1 col-start-1 col-span-1'>
+          <div className='grid grid-cols-[auto_1fr] grid-rows-2 gap-x-2 text-[#cfc7b8] select-none active:scale-90 transition-all duration-300'>
+            
+            <div className='row-start-1 row-span-2 col-start-1 col-span-1'>
+              <span class="material-symbols-outlined text-[50px]">cottage</span>
+            </div>
+            <div className='row-start-1 row-span-1 col-start-2 col-span-1 text-3xl uppercase font-bold tracking-tighter'>
+              <span>tom</span><span className='text-[#eeede0]'>horgan</span>
+            </div>
+            <div className='row-start-2 row-span-1 col-start-2 col-span-1 tracking-tight font-[500]'>
+              <span>Carpenter &amp; Builder</span>
+            </div>
+          </div>
+        </Link>
 
         {/* Navigation */}
         <div className="menu-container justify-self-end w-full md:w-auto md:col-start-2 row-start-2 text-justify">
