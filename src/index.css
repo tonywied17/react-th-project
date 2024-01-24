@@ -52,7 +52,7 @@ nav a:active {
 }
 
 /* Responsive Navigation Styles */
-@media (max-width: 768px) {
+@media (max-width: 968px) {
 
   nav a {
     margin-top: 10px;
@@ -65,7 +65,7 @@ nav a:active {
 }
 
 /* Hide navigation links on small screens */
-@media (max-width: 768px) {
+@media (max-width: 968px) {
   nav a {
     display: none;
   }
@@ -90,8 +90,10 @@ footer {
   padding: 10px;
   color: white;
   text-align: center;
+  position: relative;
+  bottom: 0;
+  width: 100%;
 }
-
 
 @keyframes fade-center {
 	0% {
@@ -228,4 +230,38 @@ footer {
 @keyframes spin {
   0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
+}
+
+
+.flex-bdr-img {
+  margin: 1em;
+  text-align: center;
+  perspective: 1000px;
+  position: relative;
+  padding: 25px;
+  max-width: fit-content;
+}
+
+.flex-bdr-img:after {
+  content: '';
+  position: absolute;
+  right: 10%;
+  top: 0;
+  height: 100%;
+  width: 90%;
+  border-width: 10px;
+  border-style: solid;
+  border-color: #b8b2a8;
+  transform: rotateY(0);
+  transform-origin: right;
+  z-index: -1;
+  transition: all 1s ease;
+  opacity: 1;
+  visibility: visible;
+}
+
+.flex-bdr-img:hover:after {
+  transform: rotateY(35deg);
+  opacity: 0;
+  visibility: hidden;
 }
