@@ -2,7 +2,7 @@ import React from 'react';
 
 function About() {
   return (
-    <div className='container mx-auto fade-center lg:px-7'>
+    <div className='container mx-auto fade-center lg:px-7 md:h-[calc(100vh-308px)]'>
       <h2 class="md:text-4xl text-2xl font-extrabold text-[#313233] my-5 drop-shadow-md">About Us</h2>
       <p class="mt-4 mb-8 md:text-lg text-base text-[#47494a]">Discover the story behind our passion for creating exceptional spaces and delivering outstanding projects.</p>
 
