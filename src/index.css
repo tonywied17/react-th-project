@@ -87,11 +87,8 @@ nav {
 /* Footer Styles */
 footer {
   background-color: #344658;
-  padding: 10px;
   color: white;
   text-align: center;
-  position: relative;
-  bottom: 0;
   width: 100%;
 }
 
@@ -240,6 +237,7 @@ footer {
   position: relative;
   padding: 25px;
   max-width: fit-content;
+  max-height: fit-content;
 }
 
 .flex-bdr-img:after {

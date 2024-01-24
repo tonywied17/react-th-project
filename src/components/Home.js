@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 function Home() {
   return (
-    <div className='md:h-[calc(100vh-284px)] fade-center'>
+    <div className='md:h-[calc(100vh-288px)] fade-center'>
       <Carousel className="rounded-none shadow-lg">
       <div className="relative h-full w-full">
         <img

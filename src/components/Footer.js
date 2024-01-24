@@ -7,7 +7,7 @@ function Footer() {
   return (
     <footer>
       <div className="container mx-auto px-4">
-        <div className="flex flex-wrap justify-between items-center py-6">
+        <div className="flex flex-wrap justify-between items-center py-7">
           <div className="w-full md:w-1/2 text-center md:text-left">
             <p className="text-sm text-[#b8b2a8]">&copy; {year} - {nextYear} Tom Horgan Carpenter &amp; Builder</p>
           </div>
