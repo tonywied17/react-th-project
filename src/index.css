@@ -263,3 +263,18 @@ footer {
   opacity: 0;
   visibility: hidden;
 }
+
+.instagram-image {
+  margin-bottom: 20px;
+}
+
+.instagram-image img, .instagram-image video {
+  max-width: 100%;
+  height: auto;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}

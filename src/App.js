@@ -13,7 +13,7 @@ import './App.css';
 
 function App() {
   return (
-    <Router basename="/dev/react-th">
+    <Router basename="/new-react-site">
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
